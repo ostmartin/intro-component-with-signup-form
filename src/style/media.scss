@@ -1,4 +1,17 @@
 @media (max-width: 375px) {
+    html{
+        min-height: 900px;
+        height: 900px;
+    }
+
+    .app{
+        min-height: 900px;
+    }
+
+    .content{
+        max-height: 800px;
+    }
+
     .header__text {
         align-items: center;
 

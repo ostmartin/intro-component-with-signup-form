@@ -11,7 +11,12 @@ const CustomField = ({icon, ...props}) => {
 
     return (
       <div className='custom__input'>
-          <input {...field} {...props} className={meta.touched && meta.error ? 'error__input' : ''} placeholder={!meta.error ? props.placeholder : (props.type === "email" ? 'email@example/com' : '')}/>
+          <input  
+            {...field} 
+            {...props} 
+            className={meta.touched && meta.error ? 'error__input' : ''} 
+            placeholder={meta.touched && meta.error ? (props.type === "email" ? 'email@example/com' : '') : props.placeholder}
+            />
         {meta.touched && meta.error ?
           (
             <>
