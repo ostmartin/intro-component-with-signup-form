@@ -1,0 +1,25 @@
+@import '../../style/variables.scss';
+
+.app{
+    margin: 0 auto;
+    // width: 1440px;
+    height: 100%;
+    background-image: url('../../../public/images/bg-intro-desktop.png');
+    background-size: contain;
+    background-color: $red;
+    padding-top: 3rem;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+.content{
+    width: 70%;
+    max-width: 1440px;
+    min-height: 540px;
+    height: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 10fr;
+    gap: 1.2rem;
+}

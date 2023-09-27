@@ -1,0 +1,78 @@
+@import '../../style/variables.scss';
+
+.auth__form{
+    height: 500px;
+    max-height: 100%;
+    position: relative;
+    background-color: white;
+    padding: 5%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @include box-shadow;
+
+    .custom__input{
+        position: relative;
+
+        input{
+            box-sizing: border-box;
+            width: 100%;
+            color: black;
+            padding-left: 8%;
+            line-height: 3;
+            border-radius: 7px;
+            font-weight: 600;
+            border: 1px solid $grayish-blue;
+    
+            &:focus{
+                outline: 1px solid $dark-blue;
+            }
+        }
+    
+        img{
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            top: 20%;
+            right: 5%;
+        }
+
+        .error__input{
+            border: 2px solid $red;
+            
+            &::placeholder{
+                color: $red;
+            }
+        }
+
+        .error{
+            position: absolute;
+            color: $red;
+            font-size: 0.8rem;
+            line-height: 2;
+            right: 0;
+        }
+    }
+
+    button{
+        background-color: $green;
+        line-height: 3;
+        border-radius: 7px;
+        border: none;
+        border-bottom: 4px solid rgba(0, 135, 0, 0.321);
+        color: white;
+        font-weight: 500;
+        text-transform: uppercase;
+        cursor: pointer;
+
+        &:hover{
+            background-color: hsl(154, 70%, 67%);
+        }
+
+        &:active{
+            scale: 0.96;
+        }
+    }
+}

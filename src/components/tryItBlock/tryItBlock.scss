@@ -1,0 +1,21 @@
+@import '../../style/variables.scss';
+
+.try-it {
+    min-height: 2rem;
+    width: 100%;
+    background-color: $blue;
+    color: white;
+    justify-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    font-size: 0.8rem;
+    font-weight: 400;
+    line-height: 2;
+    @include box-shadow;
+
+    span{
+        font-weight: 600;
+    }
+}

@@ -1,0 +1,18 @@
+@import '../../style/variables.scss';
+
+.terms{
+    font-size: .7rem;
+    text-align: center;
+    color: $grayish-blue;
+
+    a{
+        color: $red;
+        font-weight: 600;
+        cursor: pointer;
+        text-decoration: none;
+
+        &:link, &:visited{
+            text-decoration: none;
+        }
+    }
+}
