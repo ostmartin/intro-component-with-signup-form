@@ -1,0 +1,31 @@
+@media (max-width: 375px) {
+    .header__text {
+        align-items: center;
+
+        h1{
+            font-size: 1.7rem;
+            text-align: center;
+            width: 80%;
+        }
+
+        p{
+            font-size: 1rem;
+            text-align: center;
+        }
+    }
+
+    .content {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .try-it{
+        flex-direction: column;
+        min-height: 4rem;
+    }
+
+    .auth__form{
+        min-height: 420px;
+    }
+}
